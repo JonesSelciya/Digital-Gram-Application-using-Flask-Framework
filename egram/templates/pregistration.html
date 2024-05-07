@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Registration</title> 
+	<link rel="stylesheet"
+		href="style.css"> 
+</head> 
+<style>
+    body { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	font-family: sans-serif; 
+	line-height: 1.5; 
+	min-height: 100vh; 
+	background: #f3f3f3; 
+	flex-direction: column; 
+	margin: 0; 
+} 
+
+.main { 
+	background-color: #fff; 
+	border-radius: 15px; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+	padding: 10px 20px; 
+	transition: transform 0.2s; 
+	width: 500px; 
+	text-align: center; 
+} 
+
+h1 { 
+	color: rgb(13,110,253); 
+} 
+
+label { 
+	display: block; 
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	text-align: left; 
+	color: #555; 
+	font-weight: bold; 
+} 
+
+
+input { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+button { 
+	padding: 15px; 
+	border-radius: 10px; 
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+	border: none; 
+	color: white; 
+	cursor: pointer; 
+	background-color: rgb(13,110,253); 
+	width: 100%; 
+	font-size: 16px; 
+} 
+
+.wrap { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+</style>
+
+<body>
+	 
+	<div class="main"> 
+		
+		<h1>Add PDO</h1> 
+        <form method="post" action="pregistration">
+            
+            <label for="name"> 
+				Name: 
+			</label> 
+			<input type="text"
+				id="name"
+				name="name"
+				placeholder="Enter your name" required> 
+			<label for="first"> 
+				Username: 
+			</label> 
+			<input type="text"
+				id="first"
+				name="first"
+				placeholder="Enter your Username" required> 
+
+			<label for="first"> 
+				Email: 
+			</label> 
+			<input type="text"
+				id="first"
+				name="email"
+				placeholder="Enter your Username" required> 
+
+			<label for="password"> 
+				Password: 
+			</label> 
+			<input type="password"
+				id="password"
+				name="password"
+				placeholder="Enter your Password" required> 
+
+			<div class="wrap"> 
+				<button type="submit"
+						> 
+					Signup
+				</button> 
+			</div> 
+		</form> 
+		
+		</p> 
+	</div> 
+</body> 
+
+</html>
